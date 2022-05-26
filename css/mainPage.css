@@ -1,0 +1,95 @@
+header {
+    background-image: url(../images/bg.png);
+    background-size: 100%;
+    height: 81vh;
+}
+
+.title {
+    padding: 200px 0 270px 0;
+}
+
+.title h1 {
+    font-size: 45px;
+    color: #735440;
+}
+
+.title button {
+    margin-top: 50px;
+    width: 150px;
+    height: 55px;
+    background-color: #57984C;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 20px, 30px;
+}
+
+.title button:hover {
+    background-color: #67b15a;
+    transition: all 0.3s ease;
+}
+
+.products {
+    padding: 50px 100px 30px 100px;
+    font-size: 20px;
+    background-color: #fff;
+}
+
+.vision {
+    background-image: url('../images/Union.png');
+    padding-top: 50px;
+}
+
+.vision__title {
+    font-size: 64px;
+}
+
+.vision__text {
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.vision__img img {
+    width: 100%;
+    box-shadow: 14px 14px 8px 0px rgba(34, 60, 80, 0.06);
+}
+
+.vision__2 {
+    padding: 100px 0;
+}
+
+#btn_sub {
+    margin-bottom: 20px;
+}
+
+/*  */
+
+.mainActiv {
+    text-align: center;
+}
+
+.mainActiv__title {
+    margin-top: 95px;
+}
+
+.mainActiv__product h2 {
+    font-size: 24px;
+    color: #57984C;
+}
+
+.mainActiv__product p {
+    font-size: 18px;
+    margin-bottom: 95px;
+}
+
+.mainActiv__img {
+    margin-bottom: 0px;
+}
+
+.mainActiv__img img {
+    width: 100%;
+}
+
+.mainActiv__line {
+    padding: 10px 0;
+}
