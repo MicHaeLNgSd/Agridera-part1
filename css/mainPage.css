@@ -1,6 +1,6 @@
 header {
     background-image: url(../images/bg.png);
-    background-size: 100%;
+    background-size: cover;
     height: 81vh;
 }
 
