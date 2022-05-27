@@ -17,7 +17,6 @@ header {
 
 .headerImg {
     background-image: url(../images/tomatoAll/bgTomatoAll.png);
-    align-self: center;
     height: 480px;
     width: 1920px;
 }

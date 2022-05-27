@@ -39,6 +39,11 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+.row{
+    margin: 0px;
 }
 
 body {
@@ -105,8 +110,6 @@ li {
     margin-left: 10px;
 }
 
-
-
 .product_item {
     display: flex;
     flex-direction: column;
@@ -122,9 +125,6 @@ li {
 .product_item img{
     margin-bottom: 15px;
 }
-
-
-
 
 .menu__item a {
     font-size: 16px;
@@ -239,12 +239,12 @@ li {
     margin-top: 10px;
 }
 
-.footer__item {
+.footerItem {
     margin: 0 13px;
     margin-top: 5px;
 }
 
-.footer__item a {
+.footerItem a {
     font-family: 'Roboto';
     color: #fff;
     font-size: 16px;
@@ -262,7 +262,7 @@ li {
     color: #57984C;
 }
 
-.footer__menu {
+.footerMenu {
     display: flex;
     justify-content: center;
 }
