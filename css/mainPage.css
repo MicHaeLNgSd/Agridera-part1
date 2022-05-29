@@ -35,7 +35,6 @@ h1{
 
 .title button:hover {
     background-color: #67b15a;
-    transition: all 0.3s ease;
 }
 
 .products {
