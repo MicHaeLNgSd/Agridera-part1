@@ -55,9 +55,8 @@ body {
 h1, h2, h3 {
     font-family: 'RotondaBold';
 }
-h1{
-    font-size: 60px;
-}
+
+
 
 button {
     font-family: "Roboto";
@@ -106,7 +105,7 @@ li {
 }
 
 
-.menu__item {
+.menu_item {
     margin-left: 10px;
 }
 
@@ -126,7 +125,7 @@ li {
     margin-bottom: 15px;
 }
 
-.menu__item a {
+.menu_item a {
     font-size: 16px;
     color: #324950;
     font-family: 'Roboto';
@@ -172,7 +171,7 @@ li {
     padding-bottom: 30px;
 }
 
-.container{
+.footerFirst .container{
     padding: 0px;
     width: 960px;
 }
@@ -250,7 +249,7 @@ li {
     font-size: 16px;
 }
 
-.footer__link {
+.footer_link {
     margin: 0 13px;
 }
 

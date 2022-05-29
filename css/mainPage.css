@@ -4,6 +4,15 @@ header {
     height: 81vh;
 }
 
+h1{
+    font-size: 60px;
+}
+
+.container{
+    padding: 0px;
+    width: 960px;
+}
+
 .title {
     padding: 200px 0 270px 0;
 }
@@ -40,21 +49,21 @@ header {
     padding-top: 50px;
 }
 
-.vision__title {
+.vision_title {
     font-size: 64px;
 }
 
-.vision__text {
+.vision_text {
     font-size: 18px;
     padding-top: 20px;
 }
 
-.vision__img img {
+.vision_img img {
     width: 100%;
     box-shadow: 14px 14px 8px 0px rgba(34, 60, 80, 0.06);
 }
 
-.vision__2 {
+.vision_2 {
     padding: 100px 0;
 }
 
@@ -68,28 +77,28 @@ header {
     text-align: center;
 }
 
-.mainActiv__title {
+.mainActiv_title {
     margin-top: 95px;
 }
 
-.mainActiv__product h2 {
+.mainActiv_product h2 {
     font-size: 24px;
     color: #57984C;
 }
 
-.mainActiv__product p {
+.mainActiv_product p {
     font-size: 18px;
     margin-bottom: 95px;
 }
 
-.mainActiv__img {
+.mainActiv_img {
     margin-bottom: 0px;
 }
 
-.mainActiv__img img {
+.mainActiv_img img {
     width: 100%;
 }
 
-.mainActiv__line {
+.mainActiv_line {
     padding: 10px 0;
 }
