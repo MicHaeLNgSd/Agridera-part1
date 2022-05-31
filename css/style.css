@@ -23,7 +23,6 @@
         
     font-weight: normal;
     font-style: normal;
-    /* font-display: swap; */
 }
 
 @font-face {
@@ -33,7 +32,6 @@
         url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    /* font-display: swap; */
 }
 
 *{
@@ -80,10 +78,6 @@ input:focus, button:focus, textarea:focus {
     color: #324950;
   }
 
-/* .menu {
-    padding-top: 50px;
-} */
-
 header {
     padding-top: 19px;
 }
@@ -120,7 +114,6 @@ li {
     text-align: center;
     font-family: 'Roboto Slab';
     font-size: 18px;
-    /* white-space: nowrap; */
 }
 
 .product_item img{
@@ -134,58 +127,10 @@ li {
     font-weight: bold;
 }
 
-/* .openMenu {
-    visibility: hidden;
-}
-
-.closeMenu {
-    display: none;
-    width: 25px;
-    margin-right: 10px;
-    margin-top: 5px;
-}
-
-.burgerMenu {
-    z-index: 10;
-    position: absolute;
-    right: 0;
-}
-.burgerMenu img {
-    height: 40px;
-}
-.menuUp {
-    display: block;
-}
-
-.active {
-    z-index: 3;
-    position: absolute;
-    background-color: #324950; 
-    width: 100%;
-    right: 0;
-}
-
-.active a {
-    color: #fff;
-}
-
-.active li {
-    padding-bottom: 30px;
-} */
-
-
-
-
-
-
 .footerFirst .container{
     padding: 0px;
     max-width: 960px;
 }
-
-/* .active.openMenu {
-    display: none;
-} */
 
 .search {
     
@@ -221,14 +166,12 @@ li {
     margin-bottom: 10px;
     font-size: 15px;
     border: none;
-    /* float: left; */
     background: transparent;
     height: 27px;
     border-bottom: 1px solid #324950;
 }
 
 .search button {
-    /* float: left; */
     background: transparent;
     border: none;
     font-size: 17px;
@@ -288,14 +231,6 @@ footer {
 }
 
 
-
-
-/* @media (max-width: 1060px){
-    .footer__link {
-        margin: 0 5px;
-    }
-} */
-
 @media (max-width: 991px){
 
 
@@ -312,7 +247,6 @@ footer {
     }
     
     .hamb{
-        /* background-color: #57984C; */
         padding: 5px 10px;
         cursor: pointer;
     }
@@ -406,13 +340,6 @@ footer {
     .formsearch input{
         width: 200px;
     }
-    /* .menu_item {
-        margin-top: -25px;
-    } */
-
-    /* .footer_item {
-        margin: 0 5px;
-    } */
     .footer_link {
         margin-bottom: 15px;
     }
@@ -422,13 +349,11 @@ footer {
     }
 
     .product_item{
-        /* background-color: #57984C; */
         width: 33%;
         margin-top: 20px;
         white-space: nowrap;
     }
     .products_menu{
-        /* background-color: #CF2333; */
         flex-wrap: wrap;
     }
 
@@ -444,23 +369,17 @@ footer {
         justify-content: center;
     }
 
-
-
-
 }
 
 @media (max-width: 790px){
     .product_item{
-        /* background-color: #57984C; */
         width: 100%;
         white-space: nowrap;
     }
     .product_item img{
-        /* background-color: #57984C; */
         height: 80px;
     }
     .products_menu{
-        /* background-color: #CF2333; */
         flex-wrap: wrap;
         flex-direction: column;
     }
@@ -505,36 +424,3 @@ footer {
         left: 10%;
     }
 }
-
-/* @media (max-width: 767px){
-    .menu__item a {
-        font-size: 16px;
-    }
-    .menu__item {
-        margin: 0 5px;
-    }
-    .footer__item a {
-        font-size: 14px;
-    }
-    .footer__menu {
-        display: block;
-        margin-left: -20px;
-        text-align: center;
-        }
-    .search {
-        margin-bottom: -30px;
-    }
-} */
-/* @media (max-width: 575px){
-    .burgerMenu {
-        margin-right: 25px;
-    }
-}
-@media (max-width: 403px){
-    .burgerMenu {
-        margin-right: 25px;
-    }
-    .search input {
-        width: 70%;
-    }
-} */
