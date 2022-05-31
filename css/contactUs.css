@@ -1,7 +1,8 @@
 .headerImg {
     background-image: url(../images/contactUs/image7.png);
-    height: 480px;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 480px;
 }
 
 .logo a img{
@@ -88,4 +89,33 @@
 
 .address_text .line {
     padding: 20px;
+}
+
+
+@media (max-width: 991px){
+    .code_button button {
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 767px){
+    .headerImg {
+        height: 250px;
+        background-position: center;
+    }
+    .search {
+        margin-bottom: 20px;
+    }
+    .crosses {
+        display: flex;
+        justify-content: center;
+    }
+    .contactUs_title {
+        display: flex;
+        justify-content: center;
+    }
+    .contactUs_item img{
+        margin-bottom: 10px;
+    }
 }

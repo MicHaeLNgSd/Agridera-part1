@@ -23,8 +23,19 @@
                                 <button type="submit"><img src="images/search.png" alt="search.png"></button>
                             </form>
                         </div>
+
+                        <div class="burgerMenu">
+                            <div class="hamb">
+                                <div class="hamb_field" id="hamb">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="menuUp">
-                            <ul class="menu d-flex">
+                            <ul class="menu d-flex" id="menu">
                                 <li class="menu_item"><a href="index.html">        Home</a></li>
                                 <li class="menu_item"><a href="#">                 Company</a></li>
                                 <li class="menu_item"><a href="#">                 Profile</a></li>
@@ -39,6 +50,8 @@
             </div>
         </div> 
     </header>
+
+    <div class="popup" id="popup"></div> 
     
     <section class="headerImg">
         <div class="container-fluid">
@@ -243,5 +256,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>

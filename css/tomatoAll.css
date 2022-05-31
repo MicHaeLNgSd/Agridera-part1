@@ -17,8 +17,10 @@ header {
 
 .headerImg {
     background-image: url(../images/tomatoAll/bgTomatoAll.png);
+    background-position: center;
+    background-repeat: no-repeat;
     height: 480px;
-    width: 1920px;
+    width: 100%;
 }
 
 .logo a img{
@@ -42,11 +44,11 @@ main{
 }
 
 main .visionMission .row{
-    width: 960px;
+    max-width: 960px;
 }
 
 main .markets{
-    width: 1000px;
+    max-width: 1000px;
 }
 
 .redBorderLeft{
@@ -74,7 +76,7 @@ main .markets{
 .products {
     padding-top: 40px;
     padding-bottom: 20px;
-    width: 1100px;
+    max-width: 1100px;
 }
 
 .products  .items{
@@ -108,4 +110,25 @@ main .markets{
 
 .products a {
     color:#57984C;
+}
+
+
+@media (max-width: 767px){
+    .headerImg {
+        height: 250px;
+        background-position: top;
+        background-size: 300%;
+    }
+    .visionMission .title__text {
+        text-align: center;
+    }
+    .crosses {
+        display: flex;
+        justify-content: center;
+    }
+    .search {
+        margin-bottom: 20px;
+    }
+    .item{max-width: 90%;}
+
 }
