@@ -9,6 +9,7 @@
     <title>AGREDIA: tomato all</title>
 </head>
 <body>
+    
     <header class="header">
         <div class="container">
             <div class="row">
@@ -49,7 +50,7 @@
             </div>
         </div> 
     </header>
-
+   
     <div class="popup" id="popup"></div> 
     
     <section class="headerImg">
@@ -63,7 +64,7 @@
         <section class="visionMission">
             <div class="container">
                 <div class="title">
-                        <h1>Agridera Fresh Market Tomato Hybrids</h1>
+                        <h1>Agridera Fresh Market Mandarins Hybrids</h1>
                 </div>
                 <div class="row">
                     <div class="crosses col">
@@ -114,82 +115,22 @@
                         </p>
                     </div>
                 </div>
-                
-                <div class="items ">
-                    <div class="row d-flex justify-content-center">
-                        <div class="item col-lg-4 col-md-6">
-                            <a href="tomatoOne.html">
-                                <img src="images/tomatoAll/tomato1.png">
+
+                <div class="items">
+                    <div class="row">
+                        <div class="item col-lg-4 col-md-6" v-if="products" v-for="p in products">
+                            <a :href="'tomatoOne.html#'+p.id">
+                                <img :src="'../images/mandarins/'+p.image" alt="mandarin">
                                 <div class="item_text">
-                                    <h2>TAG 1000 (TAG 853)</h2>
-                                    <p>Tomato Determinate Red Standard Round</p>
+                                    <h2>{{p.title}}</h2>
+                                    <p>{{p.short_text}}</p>
                                 </div>
                             </a>
-                        </div>  
-                        <div class="item col-lg-4 col-md-6">
-                            <a href="tomatoOne.html">
-                                <img src="images/tomatoAll/tomato2.png">
-                                <div class="item_text">
-                                    <h2>TAG 1001 (TAG 855)</h2>
-                                    <p>Tomato Determinate Red Standard Round</p>
-                                </div>
-                            </a>
-                        </div>  
-                        <div class="item col-lg-4 col-md-6">
-                            <a href="tomatoOne.html">
-                                <img src="images/tomatoAll/tomato3.png">
-                                <div class="item_text">
-                                    <h2>TAG 1002 (TAG 809)</h2>
-                                    <p>Tomato Determinate Red Standard Round</p>
-                                </div>
-                            </a>
-                        </div>  
-                        <div class="item col-lg-4 col-md-6">
-                            <a href="tomatoOne.html">
-                                <img src="images/tomatoAll/tomato4.png">
-                                <div class="item_text">
-                                    <h2>TAG 1003 (TAG 834)</h2>
-                                    <p>Tomato Determinate Red Standard Round</p>
-                                </div>
-                            </a>
-                        </div>  
-                        <div class="item col-lg-4 col-md-6">
-                            <a href="tomatoOne.html">
-                                <img src="images/tomatoAll/tomato5.png">
-                                <div class="item_text">
-                                    <h2>TAG 1004 (TAG 848)</h2>
-                                    <p>Tomato Determinate Red BEEF Round</p>
-                                </div>
-                            </a>
-                        </div>  
-                        <div class="item col-lg-4 col-md-6">
-                            <a href="tomatoOne.html">
-                                <img src="images/tomatoAll/tomato6.png">
-                                <div class="item_text">
-                                    <h2>TAG 1005 (TAG 800)</h2>
-                                    <p>Tomato Determinate Red Standard Round</p>
-                                </div>
-                            </a>
-                        </div>  
-                        <div class="item col-lg-4 col-md-6">
-                            <a href="tomatoOne.html">
-                                <img src="images/tomatoAll/tomato7.png">
-                                <div class="item_text">
-                                    <h2>TAG 1006 (TAG 898)</h2>
-                                    <p>Tomato Determinate Red Elongated</p>
-                                </div>
-                            </a>
-                        </div>  
-                        <div class="item col-lg-4 col-md-6">
-                            <a href="tomatoOne.html">
-                                <img src="images/tomatoAll/tomato8.png">
-                                <div class="item_text">
-                                    <h2>TAG 1007 (TAG 816)</h2>
-                                    <p>Tomato Determinate Red Elongated</p>
-                                </div>
-                            </a>
-                        </div>  
+                        </div>
                     </div>
+                </div>
+
+
                 </div>
             </div>
         </section>
@@ -255,6 +196,9 @@
             </div>
         </div>
     </footer>
+
     <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
