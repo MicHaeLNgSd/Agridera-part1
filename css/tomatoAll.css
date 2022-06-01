@@ -39,7 +39,7 @@ main{
     background-color: rgba(252,240,240,255);
 }
 
-main .visionMission .row{
+main .visionMission .row, .products .row{
     max-width: 960px;
 }
 
