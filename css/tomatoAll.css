@@ -23,10 +23,6 @@ header {
     width: 100%;
 }
 
-.logo a img{
-    height: 80px;
-}
-
 .visionMission {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -113,7 +109,7 @@ main .markets{
 }
 
 
-@media (max-width: 767px){
+@media (max-width: 768px){
     .headerImg {
         height: 250px;
         background-position: top;
@@ -131,4 +127,15 @@ main .markets{
     }
     .item{max-width: 90%;}
 
+    .items{
+        margin-left: 10%;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 640px){
+    .items{
+        margin-left: 0%;
+        max-width: 100%;
+    }
 }

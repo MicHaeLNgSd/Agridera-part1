@@ -5,13 +5,11 @@
     height: 480px;
 }
 
-.logo a img{
-    height: 80px;
-}
-
 .header {
     background-color: #fff;
 }
+
+
 
 .contactUs {
     padding-top: 50px;
@@ -45,6 +43,10 @@
 .contactUs_item textarea {
     height: 387px;
     resize: none;
+}
+
+button{
+    white-space: nowrap;
 }
 
 .code_button button {
@@ -91,10 +93,20 @@
     padding: 20px;
 }
 
+@media (max-width: 1200px){
+    .code_button button {
+        padding: 13px 40px 13px 40px;
+    }
+}
+
 
 @media (max-width: 991px){
     .code_button button {
         margin-top: 20px;
+    }
+    .code_button {
+        display: flex;
+        justify-content: center;
     }
 
 }
