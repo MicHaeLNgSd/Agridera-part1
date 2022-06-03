@@ -52,89 +52,64 @@
 
     <div class="popup" id="popup"></div> 
 
+
     <section class="tomatoOne">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 ">
-                    <div class="goBack">
-                        <a href="tomatoAll.html">
-                            <img src="images/tomatoOne/Arrow.svg" alt="arrow">
-                            Return to all tomatoes
-                        </a>
-                    </div>
+                <div class="goBack">
+                    <a href="tomatoAll.html">
+                        <img src="images/tomatoOne/Arrow.svg" alt="arrow">
+                        Return to all tomatoes
+                    </a>
                 </div>
             </div>
 
-
-            <div class="row">
-                <div class="col-md-6">
-
+            <div class="row item" v-if="product">
+                <div class="col-lg-6">
                     <div class="title">
                         <div class="title_text">
-                            <h1>TAG 1002 <span>(TAG 809)</span></h1>
-                            <h2>Tomato Determinate Red Standard Round</h2>
+                            <h1>{{product.title}}</h1>
+                            <h2>{{product.short_text}}</h2>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="crosses col">
+                                <img src="images/xxx.png" alt="crosses">
+                            </div>
+                        </div>
+                        <div class="row quality">
+                            <div class="col-lg-2">
+                                <img src="images/tomatoOne/quality.svg" alt="quality">
+                            </div>
+                                <div class="col-lg-8">
+                                    <b class="quality_text">Very high yield and excellent fruits quality!</b>
+                                </div>
+                        </div>
 
-                    <div class="crosses">
-                        <img src="images/xxx.png" alt="crosses">
-                    </div>
-                    
-                    <div class="row quality">
-                        <div class="col-lg-3 col-md-12 m-0 p-0">
-                            <img src="images/tomatoOne/quality.svg" alt="quality">
-                        </div>
-                        <div class="col-lg-9 p-0">
-                            <b class="quality_text">Very high yield and excellent fruits quality!</b>
-                        </div>
-                    </div>
+                        <div class="row">
+                            <div class="textBlock">
+                                <div class="textBlock_item">
+                                    <h3>DESCRIPTION</h3>
+                                    <img src="images/line.svg" alt="line">
+                                    <p>{{product.desc}}</p>
+                                </div>
 
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-md-6">
-                    <div class="tomatoImage"><img src="images/tomatoAll/tomato2.png" alt="tomato"></div>
+                <div class="col-lg-6">
+                    <div class="tomatoImage"><img :src="'images/mandarins/'+product.image" alt="beet"></div>
 
                     <div class="download">
-                        <button><img src="images/tomatoOne/ico_pdf.svg" height="30" alt="pdf"><span>Download PDF</span></button>
+                        <button @click.prevent="addToCart(product.id)" v-if="!btnVisible"><img src="images/shopping-cart.svg" height="30" alt="pdf"><span>Add to card</span></button>
+                        <a href="contactUs.html"><button v-if="btnVisible"><img src="images/shopping-cart.svg" height="30" alt="cart"><span>Go to card</span></button></a>
                     </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="textBlock_item">
-                        <h3>CHARACTERISTICS</h3>
-                        <img src="images/line.svg" alt="line">
-                        <p><b>Resistance</b> <br>   
-                            HR: ToMV:0-2; Fol: 1,2; Ve/Vd;<br>    
-                            IR: TYLCV
-                        </p>
-                    </div>
-                    <div class="textBlock_item">
-                        <h3>Plant</h3>
-                        <img src="images/line.svg" alt="line">
-                        <ul>
-                            <li><span>Strong vigor that provides good leaf coverage.</span></li>
-                            <li><span>Very high productivity with good fruit setting.</span></li>
-                            <li><span>Early matured variety.</span></li>
-                        </ul>
-                    </div>
-                    <div class="textBlock_item">
-                        <h3>Fruit</h3>
-                        <img src="images/line.svg" alt="line">
-                        <ul>
-                            <li><span>Long shelf life on plant and post harvest.</span></li>
-                            <li><span>Nice shiny attractive deep red color.</span></li>
-                            <li><span>Average fruit size: 140 – 160 grams.</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
                     <div class="textBlock_item">
                         <h3>Cycle</h3>
                         <img src="images/line.svg" alt="line">
-                        <br>
+                        <br><b>Resistance</b>
                         <ul>
                             <li><span>Spring</span></li>
                             <li><span>Fall</span></li>
@@ -150,7 +125,8 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
+
 
     <section class="footerFirst">
         <div class="container">

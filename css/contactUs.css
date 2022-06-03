@@ -9,6 +9,14 @@
     background-color: #fff;
 }
 
+.table thead{
+    border-width: 20px;
+}
+
+.cart{
+    border-width: 20px;
+}
+
 .contactUs {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -41,6 +49,10 @@
 .contactUs_item textarea {
     height: 387px;
     resize: none;
+}
+
+.bucket{
+    padding-left: 13px;
 }
 
 button{
